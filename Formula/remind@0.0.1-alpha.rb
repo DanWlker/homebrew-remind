@@ -8,10 +8,7 @@ class RemindAT001Alpha < Formula
   sha256 "be276caa7d0d4f0db564a5854d72aebd0e0bbaa83b7f0c3ac0aca304b8303561"
   license "MIT"
 
-  depends_on "go" => :build
-
   def install
-    system "go", "build"
     bin.install 'remind'
   end
 
